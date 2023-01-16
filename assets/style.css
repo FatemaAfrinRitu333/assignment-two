@@ -77,6 +77,10 @@ p {
     gap: 0px 20px;
 }
 
+.header-section nav .responsive-menu {
+    display: none;
+}
+
 .header-section nav ul li a {
     text-decoration: none;
     font-weight: 500;
@@ -108,7 +112,6 @@ p {
     font-size: 4em;
     font-weight: 700;
     line-height: 75px;
-    /* text-align: center; */
     color: #131313;
 }
 
@@ -173,11 +176,11 @@ main {
     position: relative;
 }
 
-.features-section-left .section-title::before{
+.features-section-left .section-title::before {
     content: "";
     position: absolute;
     width: 5px;
-    height: 106px;
+    height: 100%;
     background-color: #ff900e;
     left: -21px;
     top: 0px;
@@ -225,15 +228,264 @@ main {
 
 /* Fact Section Design */
 
+.fact-section p,
+.sponsor-section p {
+    width: 50%;
+}
+
 .single-facts {
     padding: 40px 15px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 80px;
-    text-align: center;
     align-items: center;
+    justify-content: center;
 }
 
-.single-facts ul {
+.fact-box {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    padding: 40px 30px;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+}
+
+.fact-box:hover {
+    transition: 2s transform;
+    transform: scale(1.4);
+    background-color: #ffddb7;
+    border: 1px solid #a57f54;
+}
+
+.single-facts .fact-box ul {
     list-style: none;
+    padding: 0px;
+}
+
+.single-facts .fact-box ul img {
+    width: 25%;
+    height: 25%;
+}
+
+.single-facts .fact-box .digit-info {
+    font-size: 45px;
+    line-height: 53px;
+    font-weight: 600;
+    color: #424242;
+
+}
+
+/* Sponsor Section Design */
+
+.sponsor-section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sponsor-section .sponsor-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 120px;
+    padding: 50px 0px;
+}
+
+.sponsor-section .sponsor-list img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+/* Footer design */
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px 100px;
+}
+
+.footer {
+    padding: 40px 0px;
+    text-align: center;
+    width: 80%;
+    background-color: #fff4e7;
+}
+
+
+/* ----------
+RESPONSIVE 
+-----------*/
+
+/* Mobile (max-width: ) */
+
+@media screen and (max-width: 767px) {
+
+    /* general design */
+    p {
+        margin: 15px 0px 20px;
+    }
+
+    .btn-primary {
+        padding: 15px 20px;
+        font-size: 18px;
+    }
+
+    .section-title {
+        font-size: 1.3em;
+    }
+
+    .sub-title {
+        font-size: 18px;
+    }
+
+    .container {
+        margin: 50px 0px;
+    }
+
+    /*
+    HEADER SECTION DESIGN 
+     */
+
+    .header-section nav h2 {
+        font-size: 1.3em;
+    }
+
+    .header-section .hide {
+        display: none;
+    }
+
+    .header-section nav .responsive-menu {
+        display: block;
+        color: #FF900E;
+    }
+
+    .header-section {
+        padding: 25px 30px;
+    }
+
+    .header-section .banner {
+        margin-top: 50px;
+    }
+
+    .header-section .banner .text-part {
+        width: 100%;
+    }
+
+    .header-section .banner h1 {
+        font-size: 2em;
+        line-height: 40px;
+    }
+
+    /* MAIN SECTION DESIGN */
+
+    main {
+        padding: 10px 30px;
+    }
+
+    /* Feature list section design */
+
+    .feature-list-section {
+        display: block;
+        gap: 0px 20px;
+    }
+
+    .feature-list-section .feature-list-section-left {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .feature-list-section-right {
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    .feature-list-section-right .gray-font {
+        font-weight: 500;
+        color: #727272;
+    }
+
+    .feature-list-section-right .orange-font {
+        color: #ff900e;
+    }
+
+    /* features-section */
+
+    .features-section {
+        display: block;
+    }
+
+    .features-section .features-section-left {
+        width: 100%;
+    }
+
+    .features-section .features-section-right {
+        width: 100%;
+    }
+
+    .single-features .feature-box {
+        padding: 20px;
+    }
+
+    .features-section-right img {
+        padding-left: 30px;
+        padding-bottom: 30px;
+    }
+
+    .features-section-right button {
+        font-size: 1.8em;
+        line-height: 20px;
+    }
+
+    .features-section-right button small {
+        font-size: 15px;
+        line-height: 10px;
+    }
+
+    /* Fact Section Design */
+
+    .fact-section p,
+    .sponsor-section p {
+        width: 100%;
+    }
+
+    .single-facts {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+
+    .fact-box {
+        padding: 20px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .fact-box:hover {
+        transform: scale(1.2);
+    }
+
+    .single-facts .fact-box .digit-info {
+        font-size: 35px;
+    }
+
+    /* Sponsor Section Design */
+
+    .sponsor-section .sponsor-list {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 60px;
+        padding: 40px 0px;
+    }
+
+    /* Footer design */
+
+    footer {
+        margin: 30px 0px 60px;
+    }
+
+    .footer {
+        padding: 40px 15px;
+    }
+
 }
