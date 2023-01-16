@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&family=Work+Sans:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* General Desings */
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+p {
+    line-height: 25px;
+    color: #727272;
+    margin: 25px 0px 30px;
+}
+
+.btn-primary {
+    padding: 20px 25px;
+    background-color: #FF900E;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    border: none;
+}
+
+.section-title {
+    font-size: 45px;
+    line-height: 53px;
+    font-weight: 700;
+    color: #131313;
+}
+
+.sub-title {
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: 600;
+    color: #131313;
+}
+
+.container {
+    margin: 41px 0px 65px;
+}
+
+/* Header Design */
+
+.header-section {
+    background-color: rgba(255, 144, 14, 0.1);
+    padding: 45px 100px 50px;
+}
+
+.header-section nav h2 {
+    font-weight: 700;
+    font-size: 2.8em;
+    line-height: 53px;
+    /* text-align: center; */
+    color: #131313;
+    text-transform: capitalize;
+}
+
+.header-section nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-section nav ul {
+    list-style: none;
+    display: flex;
+    gap: 0px 20px;
+}
+
+.header-section nav ul li a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    color: #424242;
+}
+
+.header-section .banner {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.header-section .banner .text-part {
+    width: 70%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-section .banner h1 {
+    font-size: 4em;
+    font-weight: 700;
+    line-height: 75px;
+    /* text-align: center; */
+    color: #131313;
+}
+
+.header-section .banner img {
+    margin-top: 50px;
+}
+
+/* ---------------- 
+Main Section Desing 
+----------------- */
+
+main {
+    padding: 10px 100px;
+}
+
+/* feature-list-section */
+
+.feature-list-section {
+    display: flex;
+    gap: 0px 55px;
+    align-items: center;
+}
+
+.feature-list-section .feature-list-section-left {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.feature-list-section-right {
+    width: 50%;
+}
+
+.feature-list-section-right .gray-font {
+    font-weight: 500;
+    color: #727272;
+}
+
+.feature-list-section-right .orange-font {
+    color: #ff900e;
+}
+
+/* features-section */
+
+.features-section {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.features-section .features-section-left {
+    width: 45%;
+}
+
+.features-section .features-section-right {
+    width: 55%;
+}
+
+.features-section-left .section-title {
+    margin-left: 21px;
+    position: relative;
+}
+
+.features-section-left .section-title::before{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 106px;
+    background-color: #ff900e;
+    left: -21px;
+    top: 0px;
+}
+
+.single-features .feature-box {
+    padding: 30px;
+    margin-bottom: 30px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+}
+
+.single-features .feature-box p {
+    margin: 10px 0px;
+}
+
+.features-section-right {
+    position: relative;
+    z-index: 0;
+}
+
+.features-section-right img {
+    padding-left: 50px;
+    padding-bottom: 50px;
+}
+
+.features-section-right button {
+    position: absolute;
+    z-index: 10;
+    bottom: -10px;
+    left: -10px;
+    font-size: 4em;
+    color: #fff;
+    line-height: 50px;
+    font-weight: 700;
+    padding: 30px;
+}
+
+.features-section-right button small {
+    font-size: 25px;
+    line-height: 40px;
+    font-weight: 500;
+}
+
+/* Fact Section Design */
+
+.single-facts {
+    padding: 40px 15px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
+    text-align: center;
+    align-items: center;
+}
+
+.single-facts ul {
+    list-style: none;
+}
